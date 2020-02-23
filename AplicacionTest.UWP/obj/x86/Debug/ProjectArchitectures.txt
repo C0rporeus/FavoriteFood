@@ -1,0 +1,1 @@
+E:\ProyectosdeProgramacion\Csharp\Xamarin\AplicacionTest\AplicacionTest.UWP\AplicacionTest.UWP.csproj;x86
