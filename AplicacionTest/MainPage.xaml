@@ -9,11 +9,19 @@
         <ContentPage.BindingContext>
             <viewmodeles:MainPageViewModel />
         </ContentPage.BindingContext>
-        
-        <StackLayout>
-            <ListView ItemsSource="{Binding Surveys}" />
-            <Button Text="+"
-                    Command="{Binding AddCommand}"
-        </StackLayout>
+
+    <StackLayout>
+        <ListView ItemsSource="{Binding Surveys}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Name}"
+                              Detail="{Binding FavoriteFood}"/>
+
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="+"
+                    Command="{Binding AddCommand}" />
+    </StackLayout>
     
 </ContentPage>

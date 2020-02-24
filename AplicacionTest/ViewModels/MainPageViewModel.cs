@@ -1,10 +1,12 @@
 ﻿using AplicacionTest.Models;
+using AplicacionTest.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace AplicacionTest.ViewModels
 {
@@ -25,7 +27,13 @@ namespace AplicacionTest.ViewModels
 
     public MainPageViewModel()
     {
+      Surveys = new ObservableCollection<Survey>();
       AddCommand = new Command(AddCommandExcecute);
+
+      MessagingCenter.Subscribe<SurveyDetailsViewModel, Survey>(this, "SaveSurvey", (a, s) =>
+      {
+        Surveys.Add(s);
+      });
     }
     private void AddCommandExcecute()
     {

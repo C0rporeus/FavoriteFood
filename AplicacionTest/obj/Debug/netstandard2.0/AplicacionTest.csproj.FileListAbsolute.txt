@@ -17,3 +17,4 @@ E:\ProyectosdeProgramacion\Csharp\Xamarin\AplicacionTest\AplicacionTest\obj\Debu
 E:\ProyectosdeProgramacion\Csharp\Xamarin\AplicacionTest\AplicacionTest\obj\Debug\netstandard2.0\AplicacionTest.dll
 E:\ProyectosdeProgramacion\Csharp\Xamarin\AplicacionTest\AplicacionTest\obj\Debug\netstandard2.0\ref\AplicacionTest.dll
 E:\ProyectosdeProgramacion\Csharp\Xamarin\AplicacionTest\AplicacionTest\obj\Debug\netstandard2.0\AplicacionTest.pdb
+E:\ProyectosdeProgramacion\Csharp\Xamarin\AplicacionTest\AplicacionTest\obj\Debug\netstandard2.0\MainPage.xaml.g.cs

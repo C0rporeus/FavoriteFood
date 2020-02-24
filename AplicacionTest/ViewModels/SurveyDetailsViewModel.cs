@@ -1,6 +1,9 @@
-﻿using System;
+﻿using AplicacionTest.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace AplicacionTest.ViewModels
 {
@@ -23,5 +26,19 @@ namespace AplicacionTest.ViewModels
       set { string favoriteFood = value; }
     }
 
+    public ICommand SaveCommand { get; set; }
+
+    public SurveyDetailsViewModel()
+    {
+      SaveCommand = new Command(() => 
+      {
+        var newSurvey = new Survey() 
+        { 
+          Name = this.Name,
+          FavoriteFoot = this.FavoriteFood
+        };
+        MessagingCenter.Send(this, "SaveSurvey", newSurvey); 
+      });
+    }
   }
 }
